@@ -21,8 +21,15 @@ env = gym_super_mario_bros.make('SuperMarioBros-1-1-v0')
 #   1. jump right
 env = JoypadSpace(
     env,
-    [['right'],
-    ['right', 'A']]
+[
+    ['NOOP'],
+    ['right'],
+    ['right', 'A'],
+    ['right', 'B'],
+    ['right', 'A', 'B'],
+    ['A'],
+    ['left'],
+]
 )
 
 # Apply Wrappers to environment
